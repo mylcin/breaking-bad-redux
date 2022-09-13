@@ -1,0 +1,21 @@
+.randomQuoteContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+.randomQuoteInfo {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.randomQuoteContainer .randomQuoteInfo q {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.randomQuoteContainer .randomQuoteInfo strong {
+  font-size: 1.3rem;
+}

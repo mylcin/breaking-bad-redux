@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import CharacterDetail from "./pages/CharacterDetail";
+import Home from "./pages/Home";
+import Episodes from "./pages/Episodes";
+import EpisodeDetail from "./pages/EpisodeDetail";
+import RandomQuote from "./pages/RandomQuote";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/character/:char_id" element={<CharacterDetail />} />
+        <Route path="/episodes" element={<Episodes />} />
+        <Route path="/episodes/:episode_id" element={<EpisodeDetail />} />
+        <Route path="/episodes" element={<Episodes />} />
+        <Route path="/quote/random" element={<RandomQuote />} />
+      </Routes>
     </div>
   );
 }
