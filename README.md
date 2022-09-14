@@ -1,6 +1,6 @@
 # Breaking Bad App Redux
 
-Live Demo: [Click Here]()
+Live Demo: [Click Here](https://breaking-bad-redux.netlify.app/) </br>
 This project was built with React and Redux Toolkit.
 
 ## Source
